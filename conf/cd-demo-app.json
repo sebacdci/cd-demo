@@ -7,7 +7,9 @@
       "image": "mesosphere/cd-demo-app:latest"
        "network": "HOST"
     },
-    
+    "portMappings": [
+    ]
+  },
   "cpus": 0.1,
   "instances": 1,
   "labels": {
