@@ -10,13 +10,20 @@
  "portMappings": [
       {
         "containerPort": 4000,
-        "hostPort": 4000,
+        "hostPort": 0,
         "protocol": "tcp",
         "name": "jenkins-deployed-app2"
       }
     ]
   },
   "cpus": 0.1,
+  "env": {
+    "FRAMEWORK_NAME": "jenkins-deployed-app2",
+    "CPU_LIMIT": "1",
+    "DISK_LIMIT": "4096",
+    "MEM_LIMIT": "2048",
+    "VERBOSITY": "1"
+  },
   "instances": 1,
   "labels": {
     "HAPROXY_0_VHOST": "ELB_HOSTNAME",
