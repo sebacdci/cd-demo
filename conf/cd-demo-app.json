@@ -1,20 +1,13 @@
 {
-  "id": "/jenkins-deployed-app",
+  "id": "/jenkins-deployed-app2",
   "cmd": "jekyll serve",
   "container": {
     "type": "DOCKER",
     "docker": {
       "image": "mesosphere/cd-demo-app:latest"
+       "network": "HOST"
     },
-    "portMappings": [
-      {
-        "containerPort": 4000,
-        "hostPort": 0,
-        "protocol": "tcp",
-        "name": "jenkins-deployed-app"
-      }
-    ]
-  },
+    
   "cpus": 0.1,
   "instances": 1,
   "labels": {
