@@ -21,7 +21,8 @@
   "labels": {
     "HAPROXY_0_VHOST": "ELB_HOSTNAME",
     "HAPROXY_GROUP": "external",
-    "lastChangedBy": "velocity-team@mesosphere.com"
+    "lastChangedBy": "velocity-team@mesosphere.com",
+    "DCOS_SERVICE_NAME": "cd-demo-app"
   },
   "mem": 128,
   "networks": [
